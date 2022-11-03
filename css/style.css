@@ -1,0 +1,89 @@
+/*..... RESET..... */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 1;
+   padding: 1.25rem;
+}
+
+.title{
+    font-size: 2.8125rem;
+    font-weight: bold;
+}
+.btn-play{
+    padding: 1.25rem;
+    border-radius: .9375rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.25rem;
+    background-color: #eeee;
+}
+.play-minato{
+    font-size: 1.25rem;
+    font-weight: bold;
+    
+}
+
+.option-select{
+    text-align: center;
+    background-color: #eeee;
+}
+
+main{
+    flex-grow: 1;
+    background-color: #7fffd4;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+}
+
+
+.campo-box{
+    width: 25rem;
+    height: 25rem;
+    display: flex;
+    flex-wrap: wrap;
+   align-content: flex-start;
+   
+}
+
+
+
+
+.cell-box{
+   width: calc(100% / 10);
+   height: calc(100% / 10);
+   border: .0625rem solid black;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+footer{
+    padding: 1.25rem;
+}
+
+.number-green{
+    color: white;
+    background-color: green;
+}
+
+.number-red{
+    color: black;
+    background-color: red;
+}
+
