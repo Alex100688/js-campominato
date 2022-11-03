@@ -20,15 +20,21 @@ for (let i = 1; i <=100; i++) {
         numberCpu.innerHTML=(`${"Numeri usciti"} ${random}` )
         console.log(random);
        let i=1;
-        userNumber=16;
+        const userNumber=Number(16);
+        let index=i+1
        while (i<=16) {
-       if (random===userNumber) {
-        console.log("fine gioco");
+       if (userNumber!==random) {
+           this.classList.add("number-green");
+        }
+        else if(userNumber===random){
+            this.classList.add("number-red")   
+            boxCell.removeEventListener('click', function(){
+             userNumber!==random
+            });
+             
        }
         i++
        }
-        this.classList.add("number-green");
-        this.classList.toggle("number-red")
        
     });
     campoBox.append(boxCell);
