@@ -63,8 +63,19 @@ main{
 }
 
 
+.container{
+    display: flex;
+    flex-direction: column;
+}
 
-
+.number-cpu{
+    display: flex;
+    justify-content: center;
+    font-size: 1.375rem;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+}
 .cell-box{
    width: calc(100% / 10);
    height: calc(100% / 10);

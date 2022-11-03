@@ -13,11 +13,22 @@ for (let i = 1; i <=100; i++) {
     boxCell.innerHTML=i;
     boxCell.classList.add("cell-box");
     const cpuNumber=document.querySelector(".cpu-number");
-    const cpuRandom=getRndInteger(1, 16);
-    cpuNumber.innerHTM=cpuRandom;
-    console.log(cpuRandom, cpuNumber);
+    console.log(cpuNumber);
     boxCell.addEventListener('click', function(){
-        
+        const numberCpu=document.querySelector(".number-cpu");
+        let random=getRndInteger(1, 16);
+        numberCpu.innerHTML=(`${"Numeri usciti"} ${random}` )
+        console.log(random);
+       let i=1;
+        userNumber=16;
+       while (i<=16) {
+       if (random===userNumber) {
+        console.log("fine gioco");
+       }
+        i++
+       }
+        this.classList.add("number-green");
+        this.classList.toggle("number-red")
        
     });
     campoBox.append(boxCell);
